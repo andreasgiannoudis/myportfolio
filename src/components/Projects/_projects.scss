@@ -1,0 +1,125 @@
+.projects-section {
+    padding-top: 120px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.visible {
+      opacity: 1;
+    }
+  
+    .h1projects {
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-weight: $font-weight-ubuntu-bold;
+      text-align: left;
+    }
+  
+    .project-list {
+      padding-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      justify-content: center;
+    }
+  
+    .project-card {
+      max-width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: rgba(255, 255, 255, 0.15);
+      cursor: pointer;
+      transition: transform 0.4s, box-shadow 0.4s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+      &:hover {
+        transform: scale(1.025);
+        box-shadow: 0 0 100px -30px $secondary-color;
+      }
+  
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        height: 300%;
+        width: 10rem;
+        z-index: -1;
+        background: linear-gradient(to right, transparent, $progress-bar-color, transparent);
+        opacity: 0;
+        transition: opacity 0.3s;
+        animation: animate-border-gradient 5s infinite linear;
+      }
+  
+      &:hover::before {
+        opacity: 1;
+      }
+    }
+  
+    @keyframes animate-border-gradient {
+      0% {
+        transform: rotate(0deg);
+        transform-origin: bottom;
+      }
+      100% {
+        transform: rotate(360deg);
+        transform-origin: bottom;
+      }
+    }
+  
+    .project-card .card-container {
+      display: grid;
+      grid-template-areas:
+        "img"
+        "text";
+      gap: 1rem;
+      padding: 0.75rem;
+      border-radius: 12px;
+      background-color: hsl(0, 0%, 10%);
+      color: rgba(255, 255, 255, 0.7);
+      width: 100%;
+    }
+  
+    .project-card img {
+      grid-area: img;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+  
+    .project-card .wrapper {
+      grid-area: text;
+      padding: 1rem;
+    }
+  
+    .project-card h1 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+  
+    .project-card p {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #ccc;
+    }
+  
+    @media (min-width: 768px) {
+      .project-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+      }
+    }
+  
+    @media (min-width: 1024px) {
+      .project-list {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+  

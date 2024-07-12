@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $primary-color;
+    color: #fff;
+    width: calc(100% - 200px);
+    margin: auto;
+    font-family: $font-family-ubuntu;
+    font-weight: $font-weight-ubuntu-regular;
+
+    @media (max-width: 768px) {
+        width: calc(100% - 100px);
+    }
+
+    @media (max-width: 480px) {
+        width: calc(100% - 50px);
+        padding: 0 10px;
+    }
+}

@@ -1,0 +1,40 @@
+$primary-color: #0D1B1E;
+$secondary-color: #C3DBC5;
+$progress-bar-color: #7798AB;
+
+// Import the font files
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  //font-weights
+  $font-family-ubuntu: 'Ubuntu', sans-serif;
+  $font-weight-ubuntu-light: 300;
+  $font-weight-ubuntu-regular: 400;
+  $font-weight-ubuntu-medium: 500;
+  $font-weight-ubuntu-bold: 700;
+  

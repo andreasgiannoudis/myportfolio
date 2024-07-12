@@ -1,0 +1,39 @@
+.skills-section {
+    padding-top: 120px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    &.visible {
+      opacity: 1;
+    }
+
+    .h1skills{
+      text-decoration: underline;
+      text-transform: uppercase;
+      font-weight: $font-weight-ubuntu-bold;
+    }
+
+    .mySkills{
+      font-weight: $font-weight-ubuntu-regular;
+      line-height: 28px;
+      font-size: 20px;
+    }
+
+    .frontend,
+    .backend{
+      padding-top: 50px;
+    }
+
+    .frontend{
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    .backend {
+      text-align: center;
+      padding-top: 50px;
+    }
+  }
+  
+  
+  
