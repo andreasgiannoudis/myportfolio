@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { serviceID, templateID, userID } from './confidential';
+// import { serviceID, templateID, userID } from './confidential';
 
 const ContactForm = () => {
   const form = useRef();
@@ -8,7 +8,7 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(serviceID, templateID, form.current, userID)
+    emailjs.sendForm(service_7m3gwqf, template_cecs4je, form.current, TN6d1qkpy1PYdhwnJ)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
