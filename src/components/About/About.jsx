@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import me from '/src/assets/img/Andreas_Giannoudis.jpg';
+import cv from '../../assets/cv/cv_en.pdf';
 
 function About({ id }) {
   const { ref, inView } = useInView({
@@ -46,7 +47,7 @@ function About({ id }) {
                 <FaGithub size={30} />
               </a>
               <a
-                href="./src/assets/cv/cv_en.pdf"
+                href={cv}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cv"
