@@ -6,7 +6,7 @@ import { useInView } from 'react-intersection-observer';
 
 function Skills({ id }) {
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.3,
   });
   return (
     <section id={id} ref={ref} className={`skills-section ${inView ? 'visible' : ''}`}>

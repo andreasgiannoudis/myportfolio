@@ -12,6 +12,14 @@
       text-transform: uppercase;
       font-weight: $font-weight-ubuntu-bold;
       text-align: left;
+      font-size: 28px;
+    }
+
+    .info-projects{
+      .p-projects{
+        font-size: 20px;
+        line-height: 28px;
+      }
     }
   
     .project-list {

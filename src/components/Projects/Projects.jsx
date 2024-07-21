@@ -6,13 +6,13 @@ import { useInView } from 'react-intersection-observer';
 
 function Projects( {id} ) {
   const { ref, inView } = useInView({
-    threshold: 0.4,
+    threshold: 0.3,
   });
   return (
     <section id={id} ref={ref} className={`projects-section ${inView ? 'visible' : ''}`}>
         <h1 className='h1projects'>Projects</h1>
         <div className="info-projects">
-          <p>Here are some of the projects i have through through my studies.</p>
+          <p className='p-projects'>Here are some of the projects i have through through my studies.</p>
         </div>
         <div className='project-list'>
           {projectData.map(project=>(

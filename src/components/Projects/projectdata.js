@@ -10,8 +10,8 @@ const projectData = [
     {
       id: 1,
       title: 'Portfolio',
-      description: 'The portfolio you are seeing right now. Built with React Native and SASS for styling.',
-      image: 'path/to/image1.jpg',
+      description: 'The portfolio you are seeing right now. Built with React and SASS for styling. Designed and built by me!',
+      image: './src/assets/img/project-images/portfolio.png',
       link: '/'
     },
     {

@@ -60,6 +60,18 @@
 
           .info-me {
             line-height: 36px;
+            .web-developer-container {
+              display: inline-block;
+              position: relative;
+              
+              .web-developer-blue {
+                background-color: $progress-bar-color;
+                height: 22px; 
+                width: 100%;
+                margin-top: -19px;
+                border-radius: 50px;
+              }
+            }
 
             @media (max-width: 768px) {
                 line-height: 28px;
@@ -106,7 +118,7 @@
 
         .about-photo {
           position: relative;
-          width: 50%;
+          width: 60%;
           display: flex;
           justify-content: flex-end;
 
@@ -164,7 +176,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 85px;
+      margin-top: 45px;
 
       .btn-discover {
         padding: 10px 20px;
@@ -173,6 +185,7 @@
         text-decoration: none;
         background: transparent;
         font-size: 16px;
+        border-radius: 50px;
         cursor: pointer;
         transition: background 0.3s ease, color 0.3s ease;
 

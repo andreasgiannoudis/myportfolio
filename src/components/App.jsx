@@ -7,6 +7,7 @@ import Skills from './Skills/Skills';
 import ProgressBar from './Progress-Bar/ProgressBar';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
+import Footer from './Footer/Footer';
 
 function App() {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -25,7 +26,7 @@ function App() {
         scaleX: [0, 1],
         opacity: [0.5, 1],
         easing: "easeInOutExpo",
-        duration: 700,
+        duration: 500,
       })
       .add({
         targets: ".ml14 .letter",
@@ -34,16 +35,16 @@ function App() {
         translateZ: 0,
         scaleX: [0.3, 1],
         easing: "easeOutExpo",
-        duration: 600,
-        offset: "-=600",
+        duration: 400,
+        offset: "-=400",
         delay: (el, i) => 150 + 25 * i,
       })
       .add({
         targets: ".ml14",
         opacity: 0,
-        duration: 900,
+        duration: 600,
         easing: "easeOutExpo",
-        delay: 1000,
+        delay: 700,
         complete: () => setAnimationComplete(true),
       });
   }, []);
@@ -68,6 +69,7 @@ function App() {
           <Skills id="skills" />
           <Projects id="projects" />
           <Contact id="contact" />
+          <Footer />
         </>
       )}
     </>

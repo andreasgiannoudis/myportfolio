@@ -1,3 +1,3 @@
 Portfolio of Andreas Giannoudis. All rights reserved.
 
-Built with React Native and SASS for styling.
+Built with React and SASS for styling.
