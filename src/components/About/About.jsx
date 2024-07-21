@@ -17,7 +17,7 @@ function About({ id }) {
         <div className="about-content">
           <div className="about-text">
             <p className="about ">About</p>
-            <p className="info-me">
+            <div className="info-me">
               My name is Andreas Giannoudis, a &nbsp;
               <span className="web-developer-container">
                 web developer
@@ -27,7 +27,7 @@ function About({ id }) {
               user-friendly websites and applications using HTML/CSS/JavaScript,
               React, WordPress. So far I have developed some projects that show
               my skills and my creativity.
-            </p>
+            </div>
             <div className="social-media">
               <a
                 href="https://www.linkedin.com/in/andreas-giannoudis/"
