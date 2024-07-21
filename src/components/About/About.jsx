@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaFileAlt } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
+import me from '/src/assets/img/Andreas_Giannoudis.jpg';
 
 function About({ id }) {
   const { ref, inView } = useInView({
@@ -57,7 +58,7 @@ function About({ id }) {
           <div className="about-photo">
             <div className="img-container">
               <img
-                src="./src/assets/img/Andreas_Giannoudis.jpg"
+                src={me}
                 alt="Andreas Giannoudis"
               />
               <div className="overlay">
