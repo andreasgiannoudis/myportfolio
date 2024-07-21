@@ -12,7 +12,7 @@ function SliderFrontend() {
     slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: true,
-    centerPadding: '30px',
+    centerPadding: '40px',
     arrows: false,
     autoplay: true,
     autoplaySpeed: 1000,
