@@ -19,16 +19,23 @@ function SliderFrontend() {
     rtl: true,
     responsive: [
       {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
-          centerMode: false,
+          slidesToShow: 2,
+          centerMode: true,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
     ],
