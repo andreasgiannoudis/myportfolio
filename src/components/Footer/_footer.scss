@@ -1,6 +1,62 @@
-.footer{
+.footer {
+    position: relative;
+    padding-top: 170px;
+    margin-top: 80px;
     text-align: center;
-    .copyright{
+    background: url('src/assets/img/dark3.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright {
         text-align: center;
+        margin: 0;
+        padding-top: 50px;
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+
+        a {
+            color: inherit;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: inherit;
+            }
+
+            &.linkedin:hover {
+                color: #0077b5;
+            }
+
+            &.github:hover {
+                color: #333;
+            }
+
+            &.cv:hover {
+                color: #ccc; // Change to your desired hover color
+            }
+        }
     }
 }
