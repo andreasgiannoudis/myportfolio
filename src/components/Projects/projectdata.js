@@ -18,7 +18,7 @@ const projectData = [
       title: 'Popular movies and series',
       description: 'Movies/series webapp created with Next.js and Scss. Designed and developed by me. Search movies and series. Discover the popular movies and series by navigation to each page.',
       image: project5,
-      link: 'https://github.com/andreasgiannoudis/popular-movies-series'
+      link: 'https://popular-movies-series-6q6bgbiw2-andreasgiannoudis-projects.vercel.app/'
     },
     {
       id: 2,
