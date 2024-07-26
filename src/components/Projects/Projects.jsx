@@ -12,7 +12,7 @@ function Projects( {id} ) {
     <section id={id} ref={ref} className={`projects-section ${inView ? 'visible' : ''}`}>
         <h1 className='h1projects'>Projects</h1>
         <div className="info-projects">
-          <p className='p-projects'>Here are some of the projects i have through through my studies.</p>
+          <p className='p-projects'>Here are some of the projects i have completed through my studies and my free time.</p>
         </div>
         <div className='project-list'>
           {projectData.map(project=>(
