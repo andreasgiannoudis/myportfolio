@@ -8,6 +8,7 @@ import ProgressBar from './Progress-Bar/ProgressBar';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
+import SocialMediaIcons from './Socialmediaicons/SocialMediaIcons';
 
 function App() {
   const [animationComplete, setAnimationComplete] = useState(false);
@@ -63,6 +64,7 @@ function App() {
       )}
       {animationComplete && (
         <>
+          <SocialMediaIcons />
           <ProgressBar />
           <Header />
           <About id="about"/>
