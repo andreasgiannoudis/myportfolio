@@ -4,6 +4,7 @@ import anime from 'animejs/lib/anime.es.js';
 import Header from './Header/Header';
 import About from './About/About';
 import Skills from './Skills/Skills';
+import Quote from './Quote/Quote';
 import ProgressBar from './Progress-Bar/ProgressBar';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
@@ -69,6 +70,7 @@ function App() {
           <Header />
           <About id="about"/>
           <Skills id="skills" />
+          <Quote />
           <Projects id="projects" />
           <Contact id="contact" />
           <Footer />

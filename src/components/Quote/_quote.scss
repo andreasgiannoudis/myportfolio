@@ -1,0 +1,36 @@
+// Quote.scss
+$text-color: #ffffff;
+
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  background-color: $progress-bar-color;
+  padding: 2rem;
+  margin-top: 60px;
+
+  .quote-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    color: $text-color;
+    font-weight: $font-weight-ubuntu-medium;
+    text-align: center;
+    margin: 0 auto;
+
+    .quote-icon {
+      font-size: 4rem;
+      color: $primary-color;
+    }
+
+    .quote-text {
+      font-size: 4rem;
+      margin: 1rem 0;
+      font-style: italic;
+    }
+  }
+}
