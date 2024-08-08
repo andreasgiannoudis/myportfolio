@@ -26,7 +26,7 @@ function About({ id }) {
               </span>
               &nbsp; with specialization on e-commerce based in Sweden. I am passionate about solving problems and creating modern and
               user-friendly websites and applications using HTML/CSS/JavaScript,
-              React, WordPress. So far I have developed some projects that show
+              React or custom solutions on WordPress. So far I have developed some projects that show
               my skills and my creativity.
             </div>
             <div className="social-media">
